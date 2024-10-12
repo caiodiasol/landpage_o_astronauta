@@ -1,0 +1,79 @@
+@use 'variaveis';
+
+.shows{
+    padding: 2vw 5.6vw;
+    &__list{
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        gap: 18px;
+
+        &--is-active{
+            display: grid;
+        }
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr;
+            padding: 10px;
+            gap: 10px;
+        }
+        
+        
+        &__item{
+            img{
+                max-width: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        
+        &__button{
+            color: variaveis.$corDoTextoPrincipal;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+            
+            &:hover{
+                color: variaveis.$corDoTextoSecundario;
+            }
+
+            &--is-active{
+                border-color:  variaveis.$corDoBotao;
+            }
+        }
+    }
+}
+
+h2{
+    display: flex;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+button{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: variaveis.$corDoTextoSecundario;
+    background-color: variaveis.$corDoBotao;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: 2px solid variaveis.$bgColor;
+    cursor: pointer;
+}
+

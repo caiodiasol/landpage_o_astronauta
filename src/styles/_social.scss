@@ -1,0 +1,32 @@
+.social{
+    padding: 5.6vw;
+        &__item{
+        text-align: center;
+        margin-top: 24px;
+        
+        
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+        margin-top: 12px;
+    }
+
+    &__list{
+        display: block !important;
+        text-align: center;
+        
+        
+        img{
+            max-width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+    }
+}
+

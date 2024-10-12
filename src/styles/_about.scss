@@ -1,0 +1,25 @@
+.about{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media (max-width: 768px){
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        margin-top: -220px;
+    }
+    
+        img{
+        max-width: 100%;
+    }
+
+    div{
+        padding: 0 2vw;
+
+        h2{
+            margin-bottom: 24px;
+            margin-top: 24px;
+        }
+    }
+}
